@@ -12,7 +12,11 @@ function filterProjects(category) {
 for (const button of filters) button.addEventListener('click', () => filterProjects(button.dataset.filter));
 function revealLinkedProject() {
   const id = location.hash.slice(1);
-  if (projects.some(project => project.id === id)) filterProjects('all');
+  const project = projects.find(project => project.id === id);
+  if (project) {
+    filterProjects('all');
+    requestAnimationFrame(() => project.scrollIntoView({block:'start'}));
+  }
 }
 window.addEventListener('hashchange', revealLinkedProject);
 revealLinkedProject();
