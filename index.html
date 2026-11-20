@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f4f4">
+  <meta name="theme-color" content="#2646ed">
   <meta name="description" content="Create Your Own Sites — дизайн и разработка сайтов для бизнеса. Четыре проекта: красота, строительство, автосервис и мебель. Посмотрите работающие демо и обсудим ваш сайт.">
   <meta property="og:title" content="Create Your Own Sites — сайты для бизнеса">
   <meta property="og:description" content="Четыре проекта. Четыре разных характера. Дизайн и разработка сайтов с вниманием к деталям.">
@@ -17,19 +17,29 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <header class="header wrap">
+  <header class="header"><div class="wrap header-inner">
     <a class="brand" href="#top" aria-label="Create Your Own Sites — главная"><span class="brand-mark" aria-hidden="true">cys<span>.</span></span><span class="brand-name">Create your<br>own sites</span></a>
     <nav aria-label="Основная навигация"><a href="#projects">Проекты</a><a href="#approach">Подход</a><a class="nav-contact" href="#contact">Обсудить сайт</a></nav>
-  </header>
+  </div></header>
   <main id="main">
-    <section class="hero wrap" id="top" aria-labelledby="hero-title">
-      <p class="eyebrow"><span class="line" aria-hidden="true"></span> Независимая веб-разработка</p>
-      <div class="hero-layout"><h1 id="hero-title">Сайт под характер<br><span>вашего бизнеса.</span></h1><div class="hero-aside"><p>Лендинги, сайты услуг и каталоги.<br>Дизайн, структура и разработка.</p><a class="button" href="#projects">Посмотреть работы</a></div></div>
-      <div class="hero-bottom"><p>Четыре проекта — четыре разных визуальных решения.<br class="desktop-break"> Посмотрите, как сайт может рассказать именно о вашем деле.</p><span class="hero-note">HTML / CSS / JAVASCRIPT</span></div>
+    <section class="hero" id="top" aria-labelledby="hero-title"><div class="wrap">
+      <div class="hero-layout"><div class="hero-copy">
+        <p class="eyebrow">Дизайн + разработка</p>
+        <h1 id="hero-title">Разные бизнесы.<br><span>Разные сайты.</span></h1>
+        <p class="hero-description">Ваши услуги, товары и идеи — в сайте со своим характером. От структуры и дизайна до работающего результата.</p>
+        <div class="hero-actions"><a class="button" href="#projects">Посмотреть работы</a><span>Лендинги · Сайты услуг · Каталоги</span></div>
+      </div>
+      <div class="hero-scene" aria-label="Превью четырёх проектов">
+        <svg class="hero-spark" viewBox="0 0 100 100" aria-hidden="true"><g stroke="currentColor" stroke-width="15"><path d="M50 4v92M4 50h92M17 17l66 66M17 83l66-66"/></g></svg>
+        <a class="hero-shot shot-house" href="#stroim-dom"><img src="assets/previews/stroim-dom.jpg" alt="Превью сайта модульных домов" width="1440" height="1000"><span>СТРОИМ-ДОМ</span></a>
+        <a class="hero-shot shot-nude" href="#nude"><img src="assets/previews/nude.jpg" alt="Превью пространства красоты NUDE" width="1440" height="1000"><span>NUDE</span></a>
+        <a class="hero-shot shot-auto" href="#avtomedik"><img src="assets/previews/avtomedik.jpg" alt="Превью автосервиса Автомедик" width="1440" height="1000"><span>Автомедик</span></a>
+        <a class="hero-shot shot-wood" href="#wood"><img src="assets/previews/wood.jpg" alt="Превью мебельной фабрики Вуд" width="1440" height="1000"><span>ВУД</span></a>
+      </div></div>
       <nav class="project-index" aria-label="Быстрый переход к проектам"><a class="index-nude" href="#nude"><span>NUDE</span><small>Красота и уход</small></a><a class="index-house" href="#stroim-dom"><span>СТРОИМ-ДОМ</span><small>Строительство</small></a><a class="index-auto" href="#avtomedik"><span>Автомедик</span><small>Автосервис</small></a><a class="index-wood" href="#wood"><span>ВУД</span><small>Мебель и производство</small></a></nav>
-    </section>
+    </div></section>
     <section class="projects-section wrap" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><div><p class="eyebrow">Портфолио</p><h2 id="projects-title">Выбранные работы</h2></div><p>Каждый проект можно открыть<br>и посмотреть в работе.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">Портфолио</p><h2 id="projects-title">Четыре проекта.<br><span>Четыре характера.</span></h2></div><p>Каждый проект можно открыть<br>и посмотреть в работе.</p></div>
       <div class="filters" role="group" aria-label="Фильтр проектов">
         <button type="button" data-filter="all" aria-pressed="true">Все проекты <span>4</span></button>
         <button type="button" data-filter="services" aria-pressed="false">Услуги</button>
@@ -39,28 +49,28 @@
       <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
       <div class="project-grid">
         <article class="project" id="nude" data-category="services">
-          <a class="preview preview-nude" href="projects/nude/" target="_blank" rel="noopener" aria-label="Открыть демо NUDE в новой вкладке"><img src="assets/previews/nude.jpg" alt="Первый экран сайта NUDE: журнальная типографика и естественный образ модели" width="1440" height="1000" fetchpriority="high"><span class="preview-label">Посмотреть сайт</span></a>
+          <a class="preview preview-nude" href="projects/nude/" target="_blank" rel="noopener" aria-label="Открыть демо NUDE в новой вкладке"><img src="assets/previews/nude.jpg" alt="Первый экран сайта NUDE: журнальная типографика и естественный образ модели" width="1440" height="1000" fetchpriority="high"><img class="mobile-shot" src="assets/previews/nude-mobile.jpg" alt="Мобильная версия NUDE" width="390" height="844" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
           <div class="project-meta"><span>Красота и уход</span><span>Демонстрационный проект</span></div>
           <h3>NUDE <span>beauty atelier</span></h3>
           <p class="project-description">Спокойный сайт пространства красоты. Крупная типографика, услуги по направлениям и запись к мастеру.</p>
           <div class="project-actions"><a class="text-link" href="projects/nude/" target="_blank" rel="noopener">Открыть сайт<span class="sr-only"> NUDE в новой вкладке</span></a><details><summary>О проекте</summary><div class="project-details"><p>Задача концепта — передать атмосферу салона и помочь выбрать услугу.</p><ul><li>Переключение направлений услуг</li><li>Карточки команды и форма записи</li><li>Адаптация для телефона</li></ul><p class="tech">HTML · CSS · JavaScript</p></div></details></div>
         </article>
         <article class="project" id="stroim-dom" data-category="construction">
-          <a class="preview preview-house" href="projects/stroim-dom/" target="_blank" rel="noopener" aria-label="Открыть демо СТРОИМ-ДОМ в новой вкладке"><img src="assets/previews/stroim-dom.jpg" alt="Первый экран СТРОИМ-ДОМ: модульный дом и предложение рассчитать стоимость" width="1440" height="1000" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
+          <a class="preview preview-house" href="projects/stroim-dom/" target="_blank" rel="noopener" aria-label="Открыть демо СТРОИМ-ДОМ в новой вкладке"><img src="assets/previews/stroim-dom.jpg" alt="Первый экран СТРОИМ-ДОМ: модульный дом и предложение рассчитать стоимость" width="1440" height="1000" loading="lazy"><img class="mobile-shot" src="assets/previews/stroim-dom-mobile.jpg" alt="Мобильная версия СТРОИМ-ДОМ" width="390" height="844" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
           <div class="project-meta"><span>Строительство</span><span>Демонстрационный проект</span></div>
           <h3>СТРОИМ-ДОМ</h3>
           <p class="project-description">Лендинг модульных домов: от выбора проекта и технологии до предварительного расчёта стоимости.</p>
           <div class="project-actions"><a class="text-link" href="projects/stroim-dom/" target="_blank" rel="noopener">Открыть сайт<span class="sr-only"> СТРОИМ-ДОМ в новой вкладке</span></a><details><summary>О проекте</summary><div class="project-details"><p>Задача концепта — объяснить продукт и помочь покупателю сравнить варианты.</p><ul><li>Подборка проектов домов</li><li>Интерактивный калькулятор</li><li>Этапы работы и ответы на вопросы</li></ul><p class="tech">HTML · CSS · JavaScript</p></div></details></div>
         </article>
         <article class="project" id="avtomedik" data-category="services">
-          <a class="preview preview-auto" href="projects/avtomedik/" target="_blank" rel="noopener" aria-label="Открыть демо Автомедик в новой вкладке"><img src="assets/previews/avtomedik.jpg" alt="Первый экран Автомедик: диагностика и ремонт автомобилей, кнопка записи" width="1440" height="1000" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
+          <a class="preview preview-auto" href="projects/avtomedik/" target="_blank" rel="noopener" aria-label="Открыть демо Автомедик в новой вкладке"><img src="assets/previews/avtomedik.jpg" alt="Первый экран Автомедик: диагностика и ремонт автомобилей, кнопка записи" width="1440" height="1000" loading="lazy"><img class="mobile-shot" src="assets/previews/avtomedik-mobile.jpg" alt="Мобильная версия Автомедик" width="390" height="844" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
           <div class="project-meta"><span>Автосервис</span><span>Демонстрационный проект</span></div>
           <h3>Автомедик</h3>
           <p class="project-description">Сайт автосервиса с услугами, ценами и записью. Важная информация под рукой, в том числе на телефоне.</p>
           <div class="project-actions"><a class="text-link" href="projects/avtomedik/" target="_blank" rel="noopener">Открыть сайт<span class="sr-only"> Автомедик в новой вкладке</span></a><details><summary>О проекте</summary><div class="project-details"><p>Задача концепта — помочь посетителю найти нужный ремонт и способ связи.</p><ul><li>Услуги и ориентиры стоимости</li><li>Частые вопросы и контакты</li><li>Форма записи с проверкой полей</li></ul><p class="tech">HTML · CSS · JavaScript</p></div></details></div>
         </article>
         <article class="project" id="wood" data-category="production">
-          <a class="preview preview-wood" href="projects/wood/" target="_blank" rel="noopener" aria-label="Открыть демо Вуд в новой вкладке"><img src="assets/previews/wood.jpg" alt="Первый экран мебельной фабрики Вуд с интерьером и каталогом мебели" width="1440" height="1000" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
+          <a class="preview preview-wood" href="projects/wood/" target="_blank" rel="noopener" aria-label="Открыть демо Вуд в новой вкладке"><img src="assets/previews/wood.jpg" alt="Первый экран мебельной фабрики Вуд с интерьером и каталогом мебели" width="1440" height="1000" loading="lazy"><img class="mobile-shot" src="assets/previews/wood-mobile.jpg" alt="Мобильная версия Вуд" width="390" height="844" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
           <div class="project-meta"><span>Мебель и производство</span><span>Демонстрационный проект</span></div>
           <h3>Вуд <span>мебельная фабрика</span></h3>
           <p class="project-description">Многостраничный сайт с каталогом мебели, страницей производства и разделом индивидуальных заказов.</p>
@@ -69,10 +79,10 @@
       </div>
     </section>
     <section class="approach wrap" id="approach" aria-labelledby="approach-title">
-      <div class="approach-intro"><p class="eyebrow">Подход к работе</p><h2 id="approach-title">Начинаем с бизнеса.<br>Доходим до деталей.</h2><p>У каждого проекта своя аудитория, задачи и визуальный язык. От этого отталкиваюсь в структуре и дизайне.</p></div>
+      <div class="approach-intro"><p class="eyebrow">Подход к работе</p><h2 id="approach-title">Разберём задачу.<br>Соберём решение.</h2><p>У каждого проекта своя аудитория, задачи и визуальный язык. От этого отталкиваюсь в структуре и дизайне.</p></div>
       <div class="approach-list"><div><h3>Начинаем с задачи</h3><p>Обсуждаем аудиторию, содержание и то, какое действие должен совершить посетитель.</p></div><div><h3>Собираем целую картину</h3><p>Продумываем структуру и визуальный стиль. Проверяем, удобно ли читать и пользоваться сайтом.</p></div><div><h3>Готовим к запуску</h3><p>Адаптируем страницы под разные экраны, проверяем ссылки и согласуем подключение форм.</p></div></div>
     </section>
-    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Следующий проект — ваш?</p><h2 id="contact-title">Расскажите,<br>что вы создаёте.</h2><p>Напишите, чем вы занимаетесь и какой сайт нужен.<br>Обсудим задачу, состав работ и следующий шаг.</p></div><div class="contact-actions"><a class="email-link" href="mailto:createyourownsites@gmail.com">createyourownsites@gmail.com</a><div class="contact-buttons"><a class="button button-light" href="mailto:createyourownsites@gmail.com?subject=Обсудить%20сайт">Написать на почту</a><button class="copy-button" id="copy-email" type="button">Скопировать адрес</button></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></div></section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Следующий проект — ваш?</p><h2 id="contact-title">Ваш следующий<br>сайт начинается<br>с разговора.</h2><p>Напишите, чем вы занимаетесь и какой сайт нужен.<br>Обсудим задачу, состав работ и следующий шаг.</p></div><div class="contact-actions"><a class="email-link" href="mailto:createyourownsites@gmail.com">createyourownsites@gmail.com</a><div class="contact-buttons"><a class="button button-light" href="mailto:createyourownsites@gmail.com?subject=Обсудить%20сайт">Написать на почту</a><button class="copy-button" id="copy-email" type="button">Скопировать адрес</button></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></div></section>
   </main>
   <footer class="footer wrap"><span>Create Your Own Sites · 2026</span><p>Дизайн и разработка сайтов</p><a href="https://github.com/createyourownsites-glitch" target="_blank" rel="noopener">GitHub</a></footer>
 </body>

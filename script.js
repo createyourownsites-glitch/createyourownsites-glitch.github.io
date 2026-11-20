@@ -7,6 +7,7 @@ function filterProjects(category) {
     if (!project.hidden) visible++;
   }
   for (const button of filters) button.setAttribute('aria-pressed', String(button.dataset.filter === category));
+  document.querySelector('.project-grid').dataset.count = String(visible);
   document.getElementById('filter-status').textContent = `Показано проектов: ${visible}`;
 }
 for (const button of filters) button.addEventListener('click', () => filterProjects(button.dataset.filter));
