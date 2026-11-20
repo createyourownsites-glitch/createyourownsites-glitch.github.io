@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Автомедик — диагностика и ремонт автомобилей в Москве</title>
+  <meta name="description" content="Автомедик: компьютерная диагностика и ремонт автомобилей, гарантия на работы, смета до начала ремонта. Запишитесь онлайн или по телефону.">
+  <meta name="theme-color" content="#1b1f24">
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Автомедик — диагностика и ремонт автомобилей">
+  <meta property="og:description" content="Компьютерная диагностика, гарантия на работы, честная смета до начала ремонта.">
+
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Автомедик",
+    "url": "https://example.ru/",
+    "image": "https://example.ru/img/og-image.jpg",
+    "telephone": "+70001234567",
+    "priceRange": "от 700 ₽",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Примерная, д. 10",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 55.7558,
+      "longitude": 37.6173
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ]
+  }
+  </script>
+  <script type="module" src="js/main.js"></script>
+<script src="../../assets/demo.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#hero" aria-label="Автомедик — на главную">
+        <img src="img/logo.svg" width="160" height="35" alt="Автомедик">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Меню">
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Основная">
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <a class="nav__phone" href="tel:+70001234567">+7&nbsp;(000)&nbsp;123&#8209;45&#8209;67</a>
+        <a class="btn btn--primary" href="#booking">Записаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="demo-note">Демонстрационный макет. Цены, отзывы, показатели и контакты приведены для примера.</p>
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Диагностика и ремонт автомобилей</h1>
+          <p class="hero__lead">Компьютерная диагностика, гарантия на работы и честная смета до начала ремонта.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#booking">Записаться на диагностику</a>
+            <a class="btn btn--outline" href="tel:+70001234567">Позвонить</a>
+          </div>
+          <ul class="hero__perks">
+            <li>Диагностика на современном оборудовании</li>
+            <li>Гарантия на работы до 12 месяцев</li>
+            <li>Смета согласуется до ремонта</li>
+            <li>Оригинальные и качественные аналоги запчастей</li>
+          </ul>
+        </div>
+        <img class="hero__img" src="img/hero.webp" width="960" height="640" alt="Автосервис Автомедик">
+
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Услуги</h2>
+
+        <div class="grid">
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/></svg>
+            <h3>Компьютерная диагностика</h3>
+            <p>Считываем ошибки всех блоков управления и находим причину неисправности.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h3l2-3h8l2 3h3v7h-3l-2 3H8l-2-3H3z"/></svg>
+            <h3>Ремонт двигателя</h3>
+            <p>Капитальный и текущий ремонт, замена ремня и цепи ГРМ, прокладок.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+            <h3>Ходовая и подвеска</h3>
+            <p>Амортизаторы, рычаги, ступичные подшипники, развал-схождение.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M18 5h3v9h-3M9 6l1 1M6 11h1M9 17l1-1M15 7l-1 1M15 16l-1-1"/></svg>
+            <h3>Тормозная система</h3>
+            <p>Колодки, диски, суппорты, прокачка тормозной жидкости.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 5 14h6l-1 8 8-12h-6z"/></svg>
+            <h3>Автоэлектрика</h3>
+            <p>Генераторы, стартеры, проводка, освещение, сигнализации.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg>
+            <h3>ТО и замена масла</h3>
+            <p>Регламентное обслуживание, масло и фильтры по допускам производителя.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4v16M12 4v16M18 4v16M6 12h12"/></svg>
+            <h3>КПП и сцепление</h3>
+            <p>Диагностика и ремонт механических и автоматических коробок.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M4 7l16 10M20 7 4 17"/></svg>
+            <h3>Кондиционер</h3>
+            <p>Заправка, поиск утечек, чистка и замена компрессора.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+            <h3>Шиномонтаж</h3>
+            <p>Сезонная смена, балансировка, ремонт проколов. </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" class="section section--alt">
+      <div class="container">
+        <h2>Цены</h2>
+
+        <div class="table-wrap">
+          <table class="prices">
+            <caption class="visually-hidden">Ориентировочные цены на услуги</caption>
+            <thead>
+              <tr><th scope="col">Услуга</th><th scope="col">Цена от</th></tr>
+            </thead>
+            <tbody>
+            <tr><th scope="row">Компьютерная диагностика</th><td>от 1 500 ₽</td></tr>
+            <tr><th scope="row">Замена масла и фильтров</th><td>от 800 ₽</td></tr>
+            <tr><th scope="row">Замена тормозных колодок</th><td>от 1 200 ₽</td></tr>
+            <tr><th scope="row">Диагностика подвески</th><td>от 700 ₽</td></tr>
+            <tr><th scope="row">Замена амортизаторов</th><td>от 2 500 ₽</td></tr>
+            <tr><th scope="row">Замена ремня/цепи ГРМ</th><td>от 6 000 ₽</td></tr>
+            <tr><th scope="row">Диагностика и заправка кондиционера</th><td>от 2 500 ₽</td></tr>
+            <tr><th scope="row">Диагностика электрики</th><td>от 1 200 ₽</td></tr>
+            <tr><th scope="row">Ремонт КПП (диагностика)</th><td>от 1 500 ₽</td></tr>
+            <tr><th scope="row">Шиномонтаж (комплект)</th><td>от 2 400 ₽</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Пример прайса для макета. Точная стоимость определяется после диагностики.</p>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2>Как мы работаем</h2>
+        <ol class="steps">
+          <li><h3>Запись</h3><p>Оставьте заявку на сайте или позвоните нам.</p></li>
+          <li><h3>Диагностика</h3><p>Находим причину неисправности на оборудовании.</p></li>
+          <li><h3>Согласование сметы</h3><p>Называем стоимость и сроки до начала работ.</p></li>
+          <li><h3>Ремонт и гарантия</h3><p>Выполняем ремонт и выдаём гарантию на работы.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <h2>О нас</h2>
+
+        <p>Автомедик — автосервис, где опытные мастера работают на современном диагностическом оборудовании и дают гарантию на выполненные работы.</p>
+        <ul class="stats">
+          <li><strong>10 лет</strong> на рынке</li>
+          <li><strong>150+</strong> авто в месяц</li>
+          <li><strong>20</strong> марок авто</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2>Отзывы</h2>
+
+        <div class="grid">
+          <blockquote class="review"><p>Обратился с ошибкой двигателя. Мастер объяснил результат диагностики и согласовал стоимость до ремонта. Машину забрал в тот же день.</p><footer>Александр, пример отзыва</footer></blockquote>
+          <blockquote class="review"><p>Записывалась на замену масла и фильтров. Приняли вовремя, после обслуживания показали выполненные работы и выдали заказ-наряд.</p><footer>Мария, пример отзыва</footer></blockquote>
+          <blockquote class="review"><p>Проверили подвеску, показали изношенные детали и предложили варианты ремонта. Удобно, что всё можно согласовать по телефону.</p><footer>Дмитрий, пример отзыва</footer></blockquote>
+        </div>
+        <p class="note">
+          Площадки для размещения отзывов:
+          <a href="https://yandex.ru/maps/" rel="noopener" target="_blank">Яндекс Карты</a>,
+          <a href="https://2gis.ru/" rel="noopener" target="_blank">2ГИС</a>
+
+        </p>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <h2>Частые вопросы</h2>
+        <div class="faq">
+          <details>
+            <summary>Сколько длится диагностика?</summary>
+            <p>Компьютерная диагностика занимает около 30–60 минут, полная диагностика ходовой — до 2 часов.</p>
+          </details>
+          <details>
+            <summary>Есть ли гарантия на работы?</summary>
+            <p>Да, мы даём гарантию на выполненные работы и установленные запчасти. Срок указывается в заказ-наряде.</p>
+          </details>
+          <details>
+            <summary>Можно ли привезти свои запчасти?</summary>
+            <p>Да, но гарантия распространяется только на работу, а не на детали клиента.</p>
+          </details>
+          <details>
+            <summary>Можно ли оплатить картой?</summary>
+            <p>Принимаем наличные, банковские карты и безналичный расчёт для организаций.</p>
+          </details>
+          <details>
+            <summary>Нужно ли ждать в сервисе?</summary>
+            <p>Диагностику и простые работы можно подождать в зоне ожидания; для сложного ремонта согласуем срок и позвоним, когда авто готово.</p>
+          </details>
+          <details>
+            <summary>Как узнать итоговую стоимость?</summary>
+            <p>Смету согласуем с вами до начала ремонта. Без вашего согласия мы ничего не меняем.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section">
+      <div class="container booking">
+        <div>
+          <h2>Запись на диагностику</h2>
+
+          <form id="booking-form" method="post" novalidate>
+            <div class="field">
+              <label for="f-name">Имя</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Например, Алексей" required>
+              <p class="field__error" id="f-name-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Телефон</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (999) 123-45-67" required>
+              <p class="field__error" id="f-phone-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-car">Марка и модель авто</label>
+              <input id="f-car" name="car" type="text" placeholder="Например, Kia Rio, 2018 год">
+            </div>
+            <div class="field">
+              <label for="f-service">Услуга</label>
+              <select id="f-service" name="service">
+                <option value="">Помогите подобрать услугу</option>
+              <option>Компьютерная диагностика</option>
+              <option>Ремонт двигателя</option>
+              <option>Ходовая и подвеска</option>
+              <option>Тормозная система</option>
+              <option>Автоэлектрика</option>
+              <option>ТО и замена масла</option>
+              <option>КПП и сцепление</option>
+              <option>Кондиционер</option>
+              <option>Шиномонтаж</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-comment">Комментарий</label>
+              <textarea id="f-comment" name="comment" rows="3" placeholder="Например, появился стук в подвеске. Удобно приехать в субботу утром."></textarea>
+            </div>
+            <div class="field field--check">
+              <input id="f-consent" name="consent" type="checkbox" required>
+              <label for="f-consent">Согласен на <a href="privacy.html">обработку персональных данных</a></label>
+              <p class="field__error" id="f-consent-error"></p>
+            </div>
+            <button class="btn btn--primary" type="submit">Отправить заявку</button>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <aside class="booking__alt">
+          <h3>Или свяжитесь с нами</h3>
+          <ul>
+            <li><a href="tel:+70001234567">+7&nbsp;(000)&nbsp;123&#8209;45&#8209;67</a></li>
+            <li><a href="#contacts" rel="noopener" target="_blank">Telegram — контакт появится здесь</a></li>
+            <li><a href="#contacts" rel="noopener" target="_blank">WhatsApp — контакт появится здесь</a></li>
+          </ul>
+
+        </aside>
+      </div>
+    </section>
+
+    <section id="contacts" class="section section--alt">
+      <div class="container">
+        <h2>Контакты</h2>
+
+        <div class="contacts">
+          <address>
+            <p>г. Москва, ул. Примерная, д. 10</p>
+            <p>Телефон: <a href="tel:+70001234567">+7&nbsp;(000)&nbsp;123&#8209;45&#8209;67</a></p>
+            <p>E-mail: <a href="mailto:service@example.com">service@example.com</a></p>
+            <p>Часы работы: пн–сб 09:00–20:00</p>
+          </address>
+          <div class="map map--placeholder" role="img" aria-label="Заглушка карты проезда. Москва, улица Примерная, дом 10."><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><strong>Здесь будет карта проезда</strong><span>Москва, ул. Примерная, д. 10</span><small>Адрес для демонстрации</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Автомедик</p>
+
+      <p>ООО «Автомедик» · ИНН 0000000000 · ОГРН 0000000000000<br><small>Демонстрационные реквизиты</small></p>
+      <p><a href="privacy.html">Политика обработки персональных данных</a></p>
+    </div>
+  </footer>
+</body>
+</html>

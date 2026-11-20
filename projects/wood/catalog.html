@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог мебели из массива — Вуд</title>
+  <meta name="description" content="Каталог мебели фабрики «Вуд»: диваны, столы, стулья, шкафы, кровати и комоды из массива дерева. Цены от производителя.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Каталог мебели из массива — Вуд">
+  <meta property="og:description" content="Каталог мебели фабрики «Вуд»: диваны, столы, стулья, шкафы, кровати и комоды из массива дерева. Цены от производителя.">
+  <meta property="og:locale" content="ru_RU">
+  <!-- TODO: домен -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/design.css">
+  <script type="module" src="assets/js/main.js"></script>
+<script src="../../assets/demo.js" defer></script>
+</head>
+<body data-page="catalog">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Вуд, мебельная фабрика — на главную">
+        <span class="logo-name">Вуд</span>
+        <span class="logo-sub">мебельная фабрика</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <svg class="icon icon--sm icon-menu" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#menu"></use></svg>
+        <svg class="icon icon--sm icon-close" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#close"></use></svg>
+      </button>
+      <div class="site-nav" id="site-nav">
+        <nav aria-label="Основная">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+            <li><a href="production.html">Производство</a></li>
+            <li><a href="custom.html">На заказ</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a class="header-phone" href="tel:+79000000000">+7&nbsp;(900)&nbsp;000&#8209;00&#8209;00</a><!-- ПЛЕЙСХОЛДЕР: заменить -->
+          <a class="btn" href="contacts.html#request">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="page-hero"><div class="container"><h1>Каталог</h1><p class="lead">Мебель собственного производства. Цены указаны «от», точную стоимость рассчитаем по заявке.</p></div></section>
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Категории">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="chip" type="button" data-filter="sofas" aria-pressed="false">Диваны</button>
+          <button class="chip" type="button" data-filter="tables" aria-pressed="false">Столы</button>
+          <button class="chip" type="button" data-filter="chairs" aria-pressed="false">Стулья</button>
+          <button class="chip" type="button" data-filter="wardrobes" aria-pressed="false">Шкафы</button>
+          <button class="chip" type="button" data-filter="beds" aria-pressed="false">Кровати</button>
+          <button class="chip" type="button" data-filter="dressers" aria-pressed="false">Комоды</button>
+          <div class="sort">
+            <label for="sort">Сортировка</label>
+            <select id="sort" name="sort">
+              <option value="default">По умолчанию</option>
+              <option value="price-asc">Цена по возрастанию</option>
+              <option value="price-desc">Цена по убыванию</option>
+            </select>
+          </div>
+        </div>
+        <ul class="product-grid" data-products="all"></ul>
+        <p class="empty-state" data-empty hidden>Ничего не найдено</p>
+        <noscript><p>Для просмотра каталога включите JavaScript или <a href="contacts.html">свяжитесь с нами</a>.</p></noscript>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Вуд</h2>
+          <p>Мебельная фабрика. Собственное производство мебели для дома из массива.</p>
+          <p>ООО «Вуд», ИНН 0000000000, ОГРН 0000000000000<!-- ПЛЕЙСХОЛДЕР: реквизиты --></p>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <ul>
+            <li><a href="tel:+79000000000">+7&nbsp;(900)&nbsp;000&#8209;00&#8209;00</a></li>
+            <li><a href="mailto:info@wood-mebel.example">info@wood-mebel.example</a></li>
+            <li>г. Город, ул. Промышленная, д. 1</li>
+          </ul><!-- ПЛЕЙСХОЛДЕР: заменить -->
+        </div>
+        <div>
+          <h2>Часы работы</h2>
+          <p>Пн–Пт 9:00–19:00<br>Сб 10:00–16:00<br>Вс — выходной</p><!-- ПЛЕЙСХОЛДЕР -->
+        </div>
+        <div>
+          <h2>Разделы</h2>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="production.html">Производство</a></li>
+            <li><a href="custom.html">На заказ</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2025</span> Вуд</p>
+    </div>
+  </footer>
+</body>
+</html>

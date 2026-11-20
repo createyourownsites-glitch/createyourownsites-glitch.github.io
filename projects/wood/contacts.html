@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Вуд, мебельная фабрика</title>
+  <meta name="description" content="Адрес, телефон и часы работы мебельной фабрики «Вуд». Оставьте заявку, и мы перезвоним в течение рабочего дня.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Контакты — Вуд, мебельная фабрика">
+  <meta property="og:description" content="Адрес, телефон и часы работы мебельной фабрики «Вуд». Оставьте заявку, и мы перезвоним в течение рабочего дня.">
+  <meta property="og:locale" content="ru_RU">
+  <!-- TODO: домен -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/design.css">
+  <script type="module" src="assets/js/main.js"></script>
+<script src="../../assets/demo.js" defer></script>
+</head>
+<body data-page="contacts">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Вуд, мебельная фабрика — на главную">
+        <span class="logo-name">Вуд</span>
+        <span class="logo-sub">мебельная фабрика</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <svg class="icon icon--sm icon-menu" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#menu"></use></svg>
+        <svg class="icon icon--sm icon-close" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#close"></use></svg>
+      </button>
+      <div class="site-nav" id="site-nav">
+        <nav aria-label="Основная">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="production.html">Производство</a></li>
+            <li><a href="custom.html">На заказ</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a class="header-phone" href="tel:+79000000000">+7&nbsp;(900)&nbsp;000&#8209;00&#8209;00</a><!-- ПЛЕЙСХОЛДЕР: заменить -->
+          <a class="btn" href="contacts.html#request">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="page-hero"><div class="container"><h1>Контакты</h1></div></section>
+    <section class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h2>Как нас найти</h2>
+          <!-- ПЛЕЙСХОЛДЕР: заменить все значения -->
+          <ul class="contact-list">
+            <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#phone"></use></svg> <a href="tel:+79000000000">+7&nbsp;(900)&nbsp;000&#8209;00&#8209;00</a></li>
+            <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#mail"></use></svg> <a href="mailto:info@wood-mebel.example">info@wood-mebel.example</a></li>
+            <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#pin"></use></svg> г. Город, ул. Промышленная, д. 1 (плейсхолдер)</li>
+            <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#clock"></use></svg> Пн–Пт 9:00–19:00, Сб 10:00–16:00</li>
+            <li>Мессенджеры: Telegram, WhatsApp (плейсхолдер)</li>
+          </ul>
+          <div class="map-stub"><div><p>Карта появится здесь</p><a href="https://yandex.ru/maps/?text=%D0%A1%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE" rel="noopener">Открыть в Яндекс Картах</a></div></div>
+        </div>
+        <div>
+          <h2>Оставить заявку</h2>
+          <form class="form" id="request" data-request-form action="mailto:info@wood-mebel.example" method="post" enctype="text/plain">
+
+        <div class="field">
+          <label for="name">Имя *</label>
+          <input type="text" id="name" name="name" required aria-describedby="name-error" autocomplete="name">
+          <p class="field-error" id="name-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="phone">Телефон *</label>
+          <input type="tel" id="phone" name="phone" required aria-describedby="phone-error" autocomplete="tel" inputmode="tel">
+          <p class="field-error" id="phone-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <input type="hidden" name="product" id="product" value="">
+        <div class="hp" aria-hidden="true">
+          <label for="website">Не заполняйте это поле</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="field field-check">
+          <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+          <div>
+            <label for="consent">Я согласен на обработку персональных данных согласно <a href="privacy.html">политике конфиденциальности</a></label>
+            <p class="field-error" id="consent-error"></p>
+          </div>
+        </div>
+        <button class="btn" type="submit">Отправить заявку</button>
+      </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Вуд</h2>
+          <p>Мебельная фабрика. Собственное производство мебели для дома из массива.</p>
+          <p>ООО «Вуд», ИНН 0000000000, ОГРН 0000000000000<!-- ПЛЕЙСХОЛДЕР: реквизиты --></p>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <ul>
+            <li><a href="tel:+79000000000">+7&nbsp;(900)&nbsp;000&#8209;00&#8209;00</a></li>
+            <li><a href="mailto:info@wood-mebel.example">info@wood-mebel.example</a></li>
+            <li>г. Город, ул. Промышленная, д. 1</li>
+          </ul><!-- ПЛЕЙСХОЛДЕР: заменить -->
+        </div>
+        <div>
+          <h2>Часы работы</h2>
+          <p>Пн–Пт 9:00–19:00<br>Сб 10:00–16:00<br>Вс — выходной</p><!-- ПЛЕЙСХОЛДЕР -->
+        </div>
+        <div>
+          <h2>Разделы</h2>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="production.html">Производство</a></li>
+            <li><a href="custom.html">На заказ</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2025</span> Вуд</p>
+    </div>
+  </footer>
+</body>
+</html>

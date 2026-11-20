@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мебель на заказ по вашим размерам — Вуд</title>
+  <meta name="description" content="Кухни, шкафы-купе, гардеробные, столы и детская мебель на заказ. Замер, эскиз, производство за 14–30 дней.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Мебель на заказ по вашим размерам — Вуд">
+  <meta property="og:description" content="Кухни, шкафы-купе, гардеробные, столы и детская мебель на заказ. Замер, эскиз, производство за 14–30 дней.">
+  <meta property="og:locale" content="ru_RU">
+  <!-- TODO: домен -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/design.css">
+  <script type="module" src="assets/js/main.js"></script>
+<script src="../../assets/demo.js" defer></script>
+</head>
+<body data-page="custom">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Вуд, мебельная фабрика — на главную">
+        <span class="logo-name">Вуд</span>
+        <span class="logo-sub">мебельная фабрика</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <svg class="icon icon--sm icon-menu" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#menu"></use></svg>
+        <svg class="icon icon--sm icon-close" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#close"></use></svg>
+      </button>
+      <div class="site-nav" id="site-nav">
+        <nav aria-label="Основная">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="production.html">Производство</a></li>
+            <li><a href="custom.html" aria-current="page">На заказ</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a class="header-phone" href="tel:+79000000000">+7&nbsp;(900)&nbsp;000&#8209;00&#8209;00</a><!-- ПЛЕЙСХОЛДЕР: заменить -->
+          <a class="btn" href="contacts.html#request">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="page-hero"><div class="container"><h1>Мебель на заказ</h1><p class="lead">Сделаем ровно под ваше помещение и ваши задачи.</p></div></section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>Что делаем</h2></div>
+        <ul class="grid">
+          <li class="card"><h3>Кухни</h3></li>
+          <li class="card"><h3>Шкафы-купе</h3></li>
+          <li class="card"><h3>Гардеробные</h3></li>
+          <li class="card"><h3>Столы по размерам</h3></li>
+          <li class="card"><h3>Детская мебель</h3></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head"><h2>Этапы и сроки</h2></div>
+        <ol class="steps">
+          <li><strong>Заявка</strong>В день обращения.</li>
+          <li><strong>Замер</strong>1–3 дня.</li>
+          <li><strong>Эскиз и смета</strong>3–5 дней.</li>
+          <li><strong>Производство</strong>14–30 дней.</li>
+          <li><strong>Доставка и сборка</strong>1–2 дня.</li>
+        </ol>
+        <!-- ПЛЕЙСХОЛДЕР: ориентиры по цене -->
+        <p>Ориентиры по цене: кухни — от 60 000 ₽ за погонный метр, шкафы-купе — от 35 000 ₽ за погонный метр, столы — от 40 000 ₽.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>Рассчитать проект</h2></div>
+        <form class="form form--wide" id="custom-request" data-request-form action="mailto:info@wood-mebel.example" method="post" enctype="text/plain">
+
+        <div class="field">
+          <label for="name">Имя *</label>
+          <input type="text" id="name" name="name" required aria-describedby="name-error" autocomplete="name">
+          <p class="field-error" id="name-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="phone">Телефон *</label>
+          <input type="tel" id="phone" name="phone" required aria-describedby="phone-error" autocomplete="tel" inputmode="tel">
+          <p class="field-error" id="phone-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" aria-describedby="email-error" autocomplete="email" inputmode="email">
+          <p class="field-error" id="email-error"></p>
+        </div>
+        <div class="field">
+          <label for="type">Тип изделия</label>
+          <select id="type" name="type">
+            <option value="Кухня">Кухня</option>
+            <option value="Шкаф-купе">Шкаф-купе</option>
+            <option value="Гардеробная">Гардеробная</option>
+            <option value="Стол">Стол</option>
+            <option value="Детская мебель">Детская мебель</option>
+            <option value="Другое">Другое</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="dimensions">Примерные размеры</label>
+          <input type="text" id="dimensions" name="dimensions" placeholder="Например, 240 × 60 × 260 см">
+
+        </div>
+        <div class="field">
+          <label for="budget">Бюджет</label>
+          <select id="budget" name="budget">
+            <option value="до 100 000 ₽">до 100 000 ₽</option>
+            <option value="100 000 – 300 000 ₽">100 000 – 300 000 ₽</option>
+            <option value="более 300 000 ₽">более 300 000 ₽</option>
+            <option value="пока не определился">пока не определился</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Комментарий</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="website">Не заполняйте это поле</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="field field-check">
+          <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+          <div>
+            <label for="consent">Я согласен на обработку персональных данных согласно <a href="privacy.html">политике конфиденциальности</a></label>
+            <p class="field-error" id="consent-error"></p>
+          </div>
+        </div>
+        <button class="btn" type="submit">Отправить заявку</button>
+      </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Вуд</h2>
+          <p>Мебельная фабрика. Собственное производство мебели для дома из массива.</p>
+          <p>ООО «Вуд», ИНН 0000000000, ОГРН 0000000000000<!-- ПЛЕЙСХОЛДЕР: реквизиты --></p>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <ul>
+            <li><a href="tel:+79000000000">+7&nbsp;(900)&nbsp;000&#8209;00&#8209;00</a></li>
+            <li><a href="mailto:info@wood-mebel.example">info@wood-mebel.example</a></li>
+            <li>г. Город, ул. Промышленная, д. 1</li>
+          </ul><!-- ПЛЕЙСХОЛДЕР: заменить -->
+        </div>
+        <div>
+          <h2>Часы работы</h2>
+          <p>Пн–Пт 9:00–19:00<br>Сб 10:00–16:00<br>Вс — выходной</p><!-- ПЛЕЙСХОЛДЕР -->
+        </div>
+        <div>
+          <h2>Разделы</h2>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="production.html">Производство</a></li>
+            <li><a href="custom.html">На заказ</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2025</span> Вуд</p>
+    </div>
+  </footer>
+</body>
+</html>

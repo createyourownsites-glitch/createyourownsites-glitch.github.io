@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="Create Your Own Sites — дизайн и разработка сайтов для бизнеса. Четыре проекта: красота, строительство, автосервис и мебель. Посмотрите работающие демо и обсудим ваш сайт.">
+  <meta property="og:title" content="Create Your Own Sites — сайты для бизнеса">
+  <meta property="og:description" content="Четыре проекта. Четыре разных характера. Дизайн и разработка сайтов с вниманием к деталям.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://createyourownsites-glitch.github.io/">
+  <meta property="og:image" content="https://createyourownsites-glitch.github.io/assets/social-preview.jpg">
+  <title>Create Your Own Sites — портфолио веб-разработки</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header wrap">
+    <a class="brand" href="#top" aria-label="Create Your Own Sites — главная"><span class="brand-mark" aria-hidden="true">cys<span>.</span></span><span class="brand-name">Create your<br>own sites</span></a>
+    <nav aria-label="Основная навигация"><a href="#projects">Проекты</a><a href="#approach">Подход</a><a class="nav-contact" href="#contact">Обсудить сайт</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="line" aria-hidden="true"></span> Дизайн и разработка сайтов</p>
+      <div class="hero-layout"><h1 id="hero-title">Сайты для бизнеса.<br>Внимание — <em>к деталям.</em></h1><p class="hero-aside">Понятная структура.<br>Свой характер.<br>Удобно с любого экрана.</p></div>
+      <div class="hero-bottom"><p>Помогаю рассказать о вашем деле и сделать путь<br class="desktop-break"> от первого знакомства до обращения понятным.</p><a class="button" href="#projects">Посмотреть работы</a></div>
+      <div class="hero-footnote"><span>Лендинги · Сайты услуг · Каталоги</span><span>От идеи до работающего сайта</span></div>
+    </section>
+    <section class="projects-section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">Портфолио</p><h2 id="projects-title">Разные задачи.<br>Свои решения.</h2></div><p>Четыре демонстрационных проекта.<br>Каждый можно открыть и попробовать.</p></div>
+      <div class="filters" role="group" aria-label="Фильтр проектов">
+        <button type="button" data-filter="all" aria-pressed="true">Все проекты <span>4</span></button>
+        <button type="button" data-filter="services" aria-pressed="false">Услуги</button>
+        <button type="button" data-filter="construction" aria-pressed="false">Строительство</button>
+        <button type="button" data-filter="production" aria-pressed="false">Производство</button>
+      </div>
+      <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+      <div class="project-grid">
+        <article class="project" id="nude" data-category="services">
+          <a class="preview preview-nude" href="projects/nude/" target="_blank" rel="noopener" aria-label="Открыть демо NUDE в новой вкладке"><img src="assets/previews/nude.jpg" alt="Первый экран сайта NUDE: журнальная типографика и естественный образ модели" width="1440" height="1000" fetchpriority="high"><span class="preview-label">Посмотреть сайт</span></a>
+          <div class="project-meta"><span>Красота и уход</span><span>Демонстрационный проект</span></div>
+          <h3>NUDE <span>beauty atelier</span></h3>
+          <p class="project-description">Спокойный сайт пространства красоты. Крупная типографика, услуги по направлениям и запись к мастеру.</p>
+          <div class="project-actions"><a class="text-link" href="projects/nude/" target="_blank" rel="noopener">Открыть сайт<span class="sr-only"> NUDE в новой вкладке</span></a><details><summary>О проекте</summary><div class="project-details"><p>Задача концепта — передать атмосферу салона и помочь выбрать услугу.</p><ul><li>Переключение направлений услуг</li><li>Карточки команды и форма записи</li><li>Адаптация для телефона</li></ul><p class="tech">HTML · CSS · JavaScript</p></div></details></div>
+        </article>
+        <article class="project" id="stroim-dom" data-category="construction">
+          <a class="preview preview-house" href="projects/stroim-dom/" target="_blank" rel="noopener" aria-label="Открыть демо СТРОИМ-ДОМ в новой вкладке"><img src="assets/previews/stroim-dom.jpg" alt="Первый экран СТРОИМ-ДОМ: модульный дом и предложение рассчитать стоимость" width="1440" height="1000" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
+          <div class="project-meta"><span>Строительство</span><span>Демонстрационный проект</span></div>
+          <h3>СТРОИМ-ДОМ</h3>
+          <p class="project-description">Лендинг модульных домов: от выбора проекта и технологии до предварительного расчёта стоимости.</p>
+          <div class="project-actions"><a class="text-link" href="projects/stroim-dom/" target="_blank" rel="noopener">Открыть сайт<span class="sr-only"> СТРОИМ-ДОМ в новой вкладке</span></a><details><summary>О проекте</summary><div class="project-details"><p>Задача концепта — объяснить продукт и помочь покупателю сравнить варианты.</p><ul><li>Подборка проектов домов</li><li>Интерактивный калькулятор</li><li>Этапы работы и ответы на вопросы</li></ul><p class="tech">HTML · CSS · JavaScript</p></div></details></div>
+        </article>
+        <article class="project" id="avtomedik" data-category="services">
+          <a class="preview preview-auto" href="projects/avtomedik/" target="_blank" rel="noopener" aria-label="Открыть демо Автомедик в новой вкладке"><img src="assets/previews/avtomedik.jpg" alt="Первый экран Автомедик: диагностика и ремонт автомобилей, кнопка записи" width="1440" height="1000" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
+          <div class="project-meta"><span>Автосервис</span><span>Демонстрационный проект</span></div>
+          <h3>Автомедик</h3>
+          <p class="project-description">Сайт автосервиса с услугами, ценами и записью. Важная информация под рукой, в том числе на телефоне.</p>
+          <div class="project-actions"><a class="text-link" href="projects/avtomedik/" target="_blank" rel="noopener">Открыть сайт<span class="sr-only"> Автомедик в новой вкладке</span></a><details><summary>О проекте</summary><div class="project-details"><p>Задача концепта — помочь посетителю найти нужный ремонт и способ связи.</p><ul><li>Услуги и ориентиры стоимости</li><li>Частые вопросы и контакты</li><li>Форма записи с проверкой полей</li></ul><p class="tech">HTML · CSS · JavaScript</p></div></details></div>
+        </article>
+        <article class="project" id="wood" data-category="production">
+          <a class="preview preview-wood" href="projects/wood/" target="_blank" rel="noopener" aria-label="Открыть демо Вуд в новой вкладке"><img src="assets/previews/wood.jpg" alt="Первый экран мебельной фабрики Вуд с интерьером и каталогом мебели" width="1440" height="1000" loading="lazy"><span class="preview-label">Посмотреть сайт</span></a>
+          <div class="project-meta"><span>Мебель и производство</span><span>Демонстрационный проект</span></div>
+          <h3>Вуд <span>мебельная фабрика</span></h3>
+          <p class="project-description">Многостраничный сайт с каталогом мебели, страницей производства и разделом индивидуальных заказов.</p>
+          <div class="project-actions"><a class="text-link" href="projects/wood/" target="_blank" rel="noopener">Открыть сайт<span class="sr-only"> Вуд в новой вкладке</span></a><details><summary>О проекте</summary><div class="project-details"><p>Задача концепта — объединить каталог и рассказ о производстве в одном сайте.</p><ul><li>Каталог с категориями и карточками</li><li>Отдельные страницы компании и производства</li><li>Сценарий заказа по своим размерам</li></ul><p class="tech">HTML · CSS · JavaScript</p></div></details></div>
+        </article>
+      </div>
+    </section>
+    <section class="approach wrap" id="approach" aria-labelledby="approach-title">
+      <div class="approach-intro"><p class="eyebrow">Подход к работе</p><h2 id="approach-title">Красиво — это важно.<br><em>Понятно — тоже.</em></h2><p>Делаю сайты, в которых дизайн помогает увидеть главное: ваши услуги, продукт и способ связаться.</p></div>
+      <div class="approach-list"><div><h3>Начинаем с задачи</h3><p>Обсуждаем аудиторию, содержание и то, какое действие должен совершить посетитель.</p></div><div><h3>Собираем целую картину</h3><p>Продумываем структуру и визуальный стиль. Проверяем, удобно ли читать и пользоваться сайтом.</p></div><div><h3>Готовим к запуску</h3><p>Адаптируем страницы под разные экраны, проверяем ссылки и согласуем подключение форм.</p></div></div>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Есть идея для сайта?</p><h2 id="contact-title">Давайте покажем<br>ваш бизнес <em>лучше.</em></h2><p>Напишите, чем вы занимаетесь и какой сайт нужен.<br>Обсудим задачу, состав работ и следующий шаг.</p></div><div class="contact-actions"><a class="email-link" href="mailto:createyourownsites@gmail.com">createyourownsites@gmail.com</a><div class="contact-buttons"><a class="button button-light" href="mailto:createyourownsites@gmail.com?subject=Обсудить%20сайт">Написать на почту</a><button class="copy-button" id="copy-email" type="button">Скопировать адрес</button></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></div></section>
+  </main>
+  <footer class="footer wrap"><span>Create Your Own Sites · 2026</span><p>Дизайн и разработка сайтов</p><a href="https://github.com/createyourownsites-glitch" target="_blank" rel="noopener">GitHub</a></footer>
+</body>
+</html>
