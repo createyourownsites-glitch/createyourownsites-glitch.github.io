@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#211f20"><meta name="description" content="Полутон. Демонстрационный сайт коктейльного и музыкального бара. Авторские напитки, виниловые вечера и бронирование стола.">
+  <title>Полутон · Коктейли. Винил. Свой ритм.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.ced2fb7af6be.css">
+  <script type="module" src="app.089120d6b90c.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <div class="demo-strip"><span>Демо-проект. Бар вымышленный, бронирование не отправляется.</span><a href="../../#projects">В портфолио</a></div>
+  <header class="header wrap">
+    <a class="logo" href="#top" aria-label="Полутон, главная"><span class="logo-mark" aria-hidden="true">п/т</span><span>коктейли<br>и музыка</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Меню <span aria-hidden="true">☰</span></button>
+    <nav id="nav" aria-label="Основная навигация"><a href="#menu">Напитки и кухня</a><a href="#nights">Вечера</a><a href="#about">О баре</a><a href="#contacts">Где мы</a></nav>
+    <button class="reserve-link" type="button" data-reserve>Забронировать стол</button>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="images/interior.webp" alt="Тёплый вечерний свет, деревянная стойка и виниловые пластинки в камерном баре" width="1536" height="1024" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-top wrap"><p class="eyebrow">КОКТЕЙЛЬНЫЙ И МУЗЫКАЛЬНЫЙ БАР</p><span>Ежедневно · 18:00–02:00</span></div>
+      <div class="hero-copy wrap"><h1 id="hero-title">Хороший вечер<br>звучит по-своему.</h1><p>Винил, разговоры и коктейли.<br>Всё остальное подождёт.</p><button class="button copper" type="button" data-reserve>Оставить вечер за собой</button></div>
+      <div class="hero-name wrap" aria-hidden="true">ПОЛУТОН</div>
+    </section>
+    <section class="intro wrap" id="about"><p class="eyebrow">ПОЙМАТЬ СВОЙ РИТМ</p><div><h2>Немного тише город.<br>Немного ближе люди.</h2><p>Полутон — камерный бар для вечеров без спешки. Ставим пластинки целиком, смешиваем знакомые вкусы по-новому и оставляем место для разговора.</p></div><div class="intro-aside"><span class="record" aria-hidden="true"></span><p>От первого трека<br>до последнего бокала.</p></div></section>
+    <section class="menu-section wrap section" id="menu" aria-labelledby="menu-title">
+      <div class="section-head"><div><p class="eyebrow">СМЕШАНО С ХАРАКТЕРОМ</p><h2 id="menu-title">По вашему вкусу.</h2></div><p>Авторские сочетания, понятная классика<br>и хороший выбор без алкоголя.</p></div>
+      <div class="menu-tabs" role="group" aria-label="Разделы меню"><button type="button" data-filter="drinks" aria-pressed="true">Коктейли</button><button type="button" data-filter="zero" aria-pressed="false">Без алкоголя</button><button type="button" data-filter="food" aria-pressed="false">Небольшая кухня</button><span>Пример меню и цен</span></div>
+      <p class="sr-only" id="menu-status" role="status"></p>
+      <div class="drink-grid">
+        <article class="drink" data-group="drinks"><div class="drink-photo"><img src="images/amber.webp" alt="Янтарный коктейль с крупным кубом льда и апельсиновой цедрой" width="1024" height="1024" loading="lazy"><span>ТЁПЛЫЙ · ПРЯНЫЙ</span></div><div class="drink-title"><h3>Полутон</h3><span>590 ₽</span></div><p>Бурбон, апельсиновый биттер, пряный сироп.</p><span class="volume">140 мл · алкогольный</span></article>
+        <article class="drink" data-group="drinks"><div class="drink-photo"><img src="images/ruby.webp" alt="Рубиновый коктейль в тонком бокале купе" width="1024" height="1024" loading="lazy"><span>ЯГОДНЫЙ · ЛЁГКИЙ</span></div><div class="drink-title"><h3>После заката</h3><span>620 ₽</span></div><p>Джин, вишня, красный вермут, цитрус.</p><span class="volume">160 мл · алкогольный</span></article>
+        <article class="drink" data-group="zero" hidden><div class="drink-photo"><img src="images/botanical.webp" alt="Прозрачный ботанический напиток с огурцом и льдом" width="1024" height="1024" loading="lazy"><span>СВЕЖИЙ · БЕЗ АЛКОГОЛЯ</span></div><div class="drink-title"><h3>Чистая частота</h3><span>390 ₽</span></div><p>Огурец, тоник, розмарин и лайм.</p><span class="volume">250 мл · 0%</span></article>
+        <div class="food-menu" data-group="food" hidden><article><div><h3>Оливки и цитрус</h3><p>Оливки, апельсиновая цедра, пряное масло. 120 г.</p></div><span>290 ₽</span></article><article><div><h3>Сырная тарелка</h3><p>Три вида сыра, орехи и мёд. 180 г. Аллергены: молоко, орехи.</p></div><span>690 ₽</span></article><article><div><h3>Тёплый сэндвич</h3><p>Индейка, сыр, горчичный соус. 240 г. Аллергены: глютен, молоко, горчица.</p></div><span>420 ₽</span></article></div>
+      </div>
+      <div class="menu-bottom"><p>Меню создано для демонстрации. Состав и стоимость в рабочем баре уточняются перед заказом.</p><a href="#contacts">Заглянуть в гости</a></div>
+    </section>
+    <section class="nights section" id="nights"><div class="wrap"><div class="section-head"><div><p class="eyebrow">НА НАШЕЙ ЧАСТОТЕ</p><h2>У вечера есть<br>своя сторона.</h2></div><p>Вымышленная афиша для демонстрации.<br>Никакой спешки. Только музыка.</p></div><div class="night-list">
+      <article><span class="night-day">ПО ЧЕТВЕРГАМ</span><h3>Сторона A</h3><p>Джаз, соул и разговоры<br>с первого ряда.</p><span>19:00–23:00</span><button type="button" data-reserve>Выбрать стол</button></article>
+      <article><span class="night-day">ПО ПЯТНИЦАМ</span><h3>Тёплая волна</h3><p>Фанк и редкий грув.<br>Селекция на виниле.</p><span>21:00–01:00</span><button type="button" data-reserve>Выбрать стол</button></article>
+      <article><span class="night-day">ПО ВОСКРЕСЕНЬЯМ</span><h3>Медленный эфир</h3><p>Пластинка целиком,<br>ещё один спокойный вечер.</p><span>18:00–22:00</span><button type="button" data-reserve>Выбрать стол</button></article>
+    </div></div></section>
+    <section class="room section wrap"><div class="room-image"><img src="images/interior.webp" alt="Уютный зал музыкального бара в янтарном свете" width="1536" height="1024" loading="lazy"><span>Места для своих.</span></div><div class="room-copy"><p class="eyebrow">ЧУТЬ БЛИЖЕ К СТОЙКЕ</p><h2>Можно прийти<br>на один коктейль.<br>И остаться.</h2><p>У стойки — наблюдать за барменом. За столом — собрать друзей. В тихом углу — услышать друг друга.</p><button class="button outline" type="button" data-reserve>Найти свой стол</button></div></section>
+    <section class="contact-section" id="contacts"><div class="wrap contact-layout"><div><p class="eyebrow">ВАШ ВЕЧЕР УЖЕ РЯДОМ</p><h2>До встречи<br>в полутоне.</h2><button class="button copper" type="button" data-reserve>Забронировать стол</button></div><div class="contact-info"><h3>Полутон · демо-бар</h3><p>Пример адреса: ул. Виниловая, 7<br>Ежедневно, 18:00–02:00</p><p>Для разработки сайта вашего заведения:</p><a href="mailto:createyourownsites@gmail.com">createyourownsites@gmail.com</a><p class="small-note">Это концепт из портфолио. Адрес и афиша вымышлены.</p></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="footer-name" href="#top">ПОЛУТОН</a><p>Коктейли. Винил. Свой ритм.</p><a href="../../#projects">Create Your Own Sites · портфолио</a></footer>
+  <dialog id="reservation" aria-labelledby="reservation-title"><button class="dialog-close" type="button" aria-label="Закрыть бронирование">×</button><div id="reservation-content"><p class="eyebrow">ОСТАВИТЬ ВЕЧЕР ЗА СОБОЙ</p><h2 id="reservation-title">Ваш стол.</h2><p class="form-note">Попробуйте бронирование. Это демо: стол не резервируется, данные не отправляются и не сохраняются.</p><form id="reservation-form" novalidate>
+    <label>Как к вам обращаться?<input name="name" autocomplete="given-name" maxlength="80" required aria-describedby="name-error"><span class="error" id="name-error"></span></label>
+    <label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="+7 (999) 123-45-67" required aria-describedby="phone-error"><span class="error" id="phone-error"></span></label>
+    <div class="form-row"><label>Дата<input type="date" name="date" required aria-describedby="date-error"><span class="error" id="date-error"></span></label><label>Время<select name="time" required aria-describedby="time-error"></select><span class="error" id="time-error"></span></label></div>
+    <label>Сколько вас будет?<select name="guests" aria-describedby="guests-error"><option value="1">1 гость</option><option value="2" selected>2 гостя</option><option value="3">3 гостя</option><option value="4">4 гостя</option><option value="5">5 гостей</option><option value="6">6 гостей</option><option value="7">7 гостей</option><option value="8">8 гостей</option></select><span class="error" id="guests-error"></span></label>
+    <label class="check"><input type="checkbox" name="demo" aria-describedby="demo-error"><span>Понимаю, что это демонстрация и реальной брони не будет.</span></label><p class="error" id="demo-error" role="alert"></p><button type="submit" class="button copper">Проверить демо-бронь</button>
+  </form></div><div id="reservation-success" hidden tabindex="-1"><span class="success-icon" aria-hidden="true">✓</span><h2>Вечер почти<br>начался.</h2><p id="reservation-summary"></p><p>Это демонстрация: заявка не отправлена и стол не забронирован. В рабочем проекте здесь будет подтверждение от бара.</p><button type="button" class="button copper" id="reservation-done">Понятно</button></div></dialog>
+</body></html>
