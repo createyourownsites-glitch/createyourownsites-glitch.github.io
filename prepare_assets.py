@@ -20,19 +20,21 @@ for name, extension, attribute in [('styles', 'css', 'href'), ('script', 'js', '
 index.write_text(html, encoding='utf-8', newline='\n')
 
 # Новые демонстрации также подключают неизменяемые версии файлов.
-for slug in ['emal', 'kuhnya-ryadom']:
+for slug in ['emal', 'kuhnya-ryadom', 'poluton']:
     project = root / 'projects' / slug
     page = project / 'index.html'
     if not page.exists():
         continue
     project_html = page.read_text(encoding='utf-8')
     app = (project / 'app.mjs').read_text(encoding='utf-8').replace('\r\n', '\n')
-    order = project / 'order.mjs'
-    if order.exists():
-        data = order.read_bytes().replace(b'\r\n', b'\n')
-        order_name = f'order.{hashlib.sha256(data).hexdigest()[:12]}.mjs'
-        (project / order_name).write_bytes(data)
-        app = app.replace("'./order.mjs'", f"'./{order_name}'")
+    for module in ['order', 'reservation']:
+        dependency = project / f'{module}.mjs'
+        if not dependency.exists():
+            continue
+        data = dependency.read_bytes().replace(b'\r\n', b'\n')
+        module_name = f'{module}.{hashlib.sha256(data).hexdigest()[:12]}.mjs'
+        (project / module_name).write_bytes(data)
+        app = app.replace(f"'./{module}.mjs'", f"'./{module_name}'")
     for name, extension, attribute, data in [
         ('style', 'css', 'href', (project / 'style.css').read_bytes().replace(b'\r\n', b'\n')),
         ('app', 'mjs', 'src', app.encode('utf-8')),
